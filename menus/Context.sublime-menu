@@ -1,3 +1,24 @@
 [
-
+    {
+        "caption": "Local History",
+        "id": "3_row",
+        "children":
+        [
+            { "caption": "-", "id": "1_row" },
+            { "caption": "-", "id": "2_row" },
+            { "caption": "-", "id": "3_row" },
+            { "caption": "Local History Browse", "command": "history_browse" },
+            { "caption": "Local History Open", "command": "history_open" },
+            { "caption": "Local History Compare", "command": "history_compare" },
+            { "caption": "Local History Replace", "command": "history_replace" },
+            { "caption": "Local History Incremental Diff", "command": "history_incremental_diff" },
+            { "caption": "-", "id": "4_row" },
+            { "caption": "-", "id": "5_row" },
+            { "caption": "-", "id": "6_row" },
+            { "caption": "-", "id": "7_row" },
+            { "caption": "-", "id": "8_row" },
+            { "caption": "-", "id": "9_row" },
+            { "caption": "-", "id": "10_row" },
+        ]
+    }
 ]
