@@ -7,56 +7,25 @@
             { "caption": "-", "id": "1_row" },
             { "caption": "-", "id": "2_row" },
             { "caption": "-", "id": "3_row" },
-            {
-                "caption": "Local History: Open",
-                "command": "history_open"
-            },
+            { "caption": "Local History: Open", "command": "history_open" },
             {
                 "caption": "Local History: Snapshots",
                 "children":
                 [
-                    {
-                        "caption": "Open",
-                        "command": "history_open_snapshot"
-                    },
-                    {
-                        "caption": "Create",
-                        "command": "history_create_snapshot"
-                    },
-                    {
-                        "caption": "Diff",
-                        "command": "history_open_snapshot",
-                        "args": {"compare": true}
-                    },
-                    {
-                        "caption": "Diff & Replace with snapshot",
-                        "command": "history_open_snapshot",
-                        "args": {"replace": true}
-                    },
-                    {
-                        "caption": "Compare side-by-side with snapshot",
-                        "command": "history_open_snapshot",
-                        "args": {"sbs": true}
-                    }
+                    { "caption": "Open", "command": "history_open_snapshot" },
+                    { "caption": "Create", "command": "history_create_snapshot" },
+                    { "caption": "Diff", "command": "history_open_snapshot", "args": {"compare": true} },
+                    { "caption": "Diff & Replace with snapshot", "command": "history_open_snapshot", "args": {"replace": true} },
+                    { "caption": "Compare side-by-side with snapshot", "command": "history_open_snapshot", "args": {"sbs": true} }
                 ]
             },
             {
                 "caption": "Local History: Compare with History",
                 "children":
                 [
-                    {
-                        "caption": "Diff",
-                        "command": "history_compare"
-                    },
-                    {
-                        "caption": "Diff & Replace with history",
-                        "command": "history_replace"
-                    },
-                    {
-                        "caption": "Compare side-by-side with history",
-                        "command": "history_compare",
-                        "args": {"sbs": true}
-                    },
+                    { "caption": "Diff", "command": "history_compare" },
+                    { "caption": "Diff & Replace with history", "command": "history_replace" },
+                    { "caption": "Compare side-by-side with history", "command": "history_compare", "args": {"sbs": true} },
                 ]
             },
             { "caption": "Local History: Incremental Diff", "command": "history_incremental_diff" },
