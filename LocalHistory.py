@@ -199,6 +199,11 @@ class HistorySave(sublime_plugin.EventListener):
 
         if PY2:
             file_path = file_path.encode('utf-8')
+
+        if not os.path.exists(file_path):
+            sys.write.stderr('File History: File not saved, as it does not exists: %s\n' % file_path)
+            return
+
         if os.path.getsize(file_path) > size_limit:
             status_msg('File not saved, exceeded %s limit.' % readable_file_size(size_limit))
             return
