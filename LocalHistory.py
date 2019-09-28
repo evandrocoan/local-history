@@ -23,7 +23,10 @@ NO_SELECTION = -1
 settings = None
 
 def status_msg(msg):
-    sublime.status_message('Local History: ' + msg)
+    message = 'Local History: ' + msg
+    print( message )
+    sublime.status_message( message )
+
 
 def readable_file_size(size):
     suffixes = ['bytes', 'KB', 'MB', 'GB', 'TB', 'EB', 'ZB']
@@ -201,7 +204,7 @@ class HistorySave(sublime_plugin.EventListener):
             file_path = file_path.encode('utf-8')
 
         if not os.path.exists(file_path):
-            sys.write.stderr('File History: File not saved, as it does not exists: %s\n' % file_path)
+            status_msg("File History: File not saved, as '%s' does not exists..." % file_path)
             return
 
         if os.path.getsize(file_path) > size_limit:
