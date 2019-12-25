@@ -56,6 +56,7 @@ A [Sublime Text](https://www.sublimetext.com) package for maintaining a local hi
 search for **`LocalHistory`** and press <kbd>Enter</kbd>
 
 See also:
+
 1. [ITE - Integrated Toolset Environment](https://github.com/evandrocoan/ITE)
 1. [Package control docs](https://packagecontrol.io/docs/usage) for details.
 
